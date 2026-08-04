@@ -70,3 +70,23 @@ O formulário da seção de contato abre o WhatsApp com os dados preenchidos pel
 ## Observação
 
 O projeto é uma implementação original e não copia o código-fonte de portfólios de terceiros.
+
+
+## Logotipos de empresas atendidas
+
+A faixa de prova social foi preparada logo abaixo da primeira dobra e está temporariamente oculta para não exibir placeholders no site publicado. Quando os logotipos forem adicionados:
+
+1. Salve os arquivos em `assets/clientes/`, preferencialmente em SVG ou PNG transparente.
+2. Insira cada logo dentro de `.clients-logos` usando a classe `.client-logo`.
+3. Remova o atributo `hidden` da seção `#clientes`.
+
+O CSS já aplica escala de cinza, baixa opacidade e brilho neutro para manter todas as marcas visualmente consistentes.
+
+
+## Atualização recente
+
+- hero com foto logo na abertura;
+- remoção da antiga seção de métricas;
+- inclusão da faixa de logos de empresas atendidas com tratamento visual monocromático e sem fundos desnecessários.
+
+- carrossel contínuo e responsivo para as empresas atendidas, com pausa automática no hover e controle acessível de pausar/retomar.

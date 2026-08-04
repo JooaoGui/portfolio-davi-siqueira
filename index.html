@@ -63,49 +63,68 @@
             <a class="button" href="#atuacao">Conhecer meu trabalho</a>
             <a class="text-link" href="#contato">Solicitar diagnóstico <span aria-hidden="true">↗</span></a>
           </div>
-
-          <div class="hero-proof" aria-label="Destaques profissionais">
-            <div>
-              <strong>+3 anos</strong>
-              <span>de experiência</span>
-            </div>
-            <div>
-              <strong>+30 projetos</strong>
-              <span>geridos e escalados</span>
-            </div>
-            <div>
-              <strong>Meta + Google</strong>
-              <span>gestão multicanal</span>
-            </div>
-          </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Painel ilustrativo de desempenho de campanhas">
-          <img src="assets/dashboard-visual.svg" alt="Ilustração de um dashboard de mídia paga" />
-          <div class="floating-card floating-card-top">
-            <span>Investimento gerenciado</span>
-            <strong>R$ 100 mil+</strong>
+        <div class="hero-portrait reveal">
+          <div class="hero-portrait-frame">
+            <img src="assets/davi-siqueira.jpg" alt="Retrato profissional de Davi Siqueira Silva" />
           </div>
-          <div class="floating-card floating-card-bottom">
-            <span>Projetos escalados</span>
-            <strong>+30</strong>
+          <div class="hero-portrait-badge">
+            <span aria-hidden="true"></span>
+            Disponível para novos projetos
+          </div>
+          <div class="hero-portrait-caption">
+            <strong>Davi Siqueira Silva</strong>
+            <span>Especialista em Meta Ads e Google Ads</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="logo-strip" aria-label="Áreas de experiência">
-      <div class="container">
-        <p>Experiência prática em</p>
-        <div class="segment-list">
-          <span>Meta Ads</span>
-          <span>Google Ads</span>
-          <span>Geração de leads</span>
-          <span>Vendas</span>
-          <span>Reconhecimento</span>
+    <section class="clients-strip" id="clientes" aria-labelledby="clientes-titulo">
+      <div class="container clients-inner">
+        <div class="clients-heading reveal">
+          <div>
+            <p class="clients-label">Empresas e projetos atendidos</p>
+            <h2 id="clientes-titulo" class="clients-title">Marcas que confiaram no meu trabalho.</h2>
+          </div>
+          <div class="clients-heading-side">
+            <p class="clients-text">Experiência em operações de diferentes segmentos, objetivos e momentos de negócio.</p>
+            <button class="carousel-toggle" type="button" data-carousel-toggle aria-pressed="false" aria-label="Pausar carrossel de empresas">
+              <span class="carousel-toggle-icon" aria-hidden="true">Ⅱ</span>
+              <span data-carousel-toggle-label>Pausar</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="clients-carousel reveal" data-logo-carousel aria-label="Logotipos de empresas atendidas">
+          <div class="clients-viewport">
+            <div class="clients-track" data-carousel-track>
+              <div class="clients-group" data-carousel-group>
+                <figure class="client-logo">
+                  <img src="assets/logos/satoru-car-detail.png" alt="Logotipo da Satoru Car Detail" loading="lazy" />
+                  <figcaption>Satoru Car Detail</figcaption>
+                </figure>
+                <figure class="client-logo">
+                  <img src="assets/logos/fecocar.png" alt="Logotipo da Fecocar" loading="lazy" />
+                  <figcaption>Fecocar</figcaption>
+                </figure>
+                <figure class="client-logo">
+                  <img src="assets/logos/renova-clinic.png" alt="Logotipo da Renova Clinic" loading="lazy" />
+                  <figcaption>Renova Clinic</figcaption>
+                </figure>
+                <figure class="client-logo client-logo-icon-only">
+                  <img src="assets/logos/fox-solucoes.png" alt="Ícone da Fox Soluções em Películas" loading="lazy" />
+                  <figcaption>Fox Soluções em Películas</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+
 
     <section class="section section-intro" id="posicionamento">
       <div class="container intro-grid">
@@ -116,31 +135,6 @@
             Meu trabalho considera o funil de vendas, o posicionamento digital, a verba disponível e as metas do cliente para construir campanhas com foco em performance, otimização e resultados mais previsíveis.
           </p>
         </div>
-      </div>
-    </section>
-
-    <section class="section metrics" aria-label="Métricas de destaque">
-      <div class="container metrics-grid">
-        <article class="metric-card reveal">
-          <span class="metric-label">Experiência profissional</span>
-          <strong class="metric-number" data-counter data-value="3" data-prefix="+" data-suffix=" anos">0</strong>
-          <p>atuando com planejamento, gestão e otimização de mídia paga.</p>
-        </article>
-        <article class="metric-card reveal">
-          <span class="metric-label">Projetos escalados</span>
-          <strong class="metric-number" data-counter data-value="30" data-prefix="+" data-suffix="">0</strong>
-          <p>operações geridas simultaneamente em diferentes segmentos.</p>
-        </article>
-        <article class="metric-card reveal">
-          <span class="metric-label">Investimento gerenciado</span>
-          <strong class="metric-number" data-counter data-value="100" data-prefix="R$ " data-suffix=" mil+">R$ 0</strong>
-          <p>em anúncios no Facebook, Instagram e Google.</p>
-        </article>
-        <article class="metric-card reveal">
-          <span class="metric-label">Plataformas principais</span>
-          <strong class="metric-number" data-counter data-value="2" data-prefix="" data-suffix="">0</strong>
-          <p>Meta Ads e Google Ads, definidos conforme cada operação.</p>
-        </article>
       </div>
     </section>
 
@@ -335,32 +329,8 @@
       </div>
     </section>
 
-    <section class="section performance-metrics" aria-label="Métricas acompanhadas">
-      <div class="container">
-        <div class="section-heading compact reveal">
-          <div>
-            <p class="section-kicker">Métricas acompanhadas</p>
-            <h2>Indicadores que orientam as decisões de campanha.</h2>
-          </div>
-          <p>Os dados são analisados em conjunto com o objetivo e o contexto da operação, evitando decisões baseadas em uma única métrica isolada.</p>
-        </div>
-
-        <div class="metric-watch-grid">
-          <article class="metric-watch-card reveal"><strong>CPC</strong><span>Custo por clique</span></article>
-          <article class="metric-watch-card reveal"><strong>CPR</strong><span>Custo por resultado</span></article>
-          <article class="metric-watch-card reveal"><strong>CPL</strong><span>Custo por lead</span></article>
-          <article class="metric-watch-card reveal"><strong>CPA</strong><span>Custo por aquisição</span></article>
-          <article class="metric-watch-card reveal"><strong>CTR</strong><span>Taxa de cliques</span></article>
-          <article class="metric-watch-card reveal"><strong>ROAS</strong><span>Retorno sobre o investimento em anúncios</span></article>
-        </div>
-      </div>
-    </section>
-
     <section class="section about" id="sobre">
       <div class="container about-grid">
-        <div class="about-visual reveal">
-          <img src="assets/davi-siqueira.jpg" alt="Retrato profissional de Davi Siqueira Silva" />
-        </div>
         <div class="about-copy reveal">
           <p class="section-kicker">Sobre mim</p>
           <h2>Estratégia antes de apertar o botão “publicar”.</h2>
@@ -371,18 +341,38 @@
             Ao longo dessa trajetória, gerenciei mais de <strong>R$ 100 mil em anúncios</strong> no Facebook, Instagram e Google, com foco em performance, otimização de campanhas e geração de resultados previsíveis para empresas de diversos segmentos.
           </p>
           <p>
-            Minha atuação combina análise de funil, planejamento de mídia, acompanhamento diário de métricas, testes contínuos e alinhamento próximo com o cliente.
+            Minha atuação combina análise de funil, planejamento de mídia, acompanhamento diário de indicadores, testes contínuos e alinhamento próximo com o cliente.
           </p>
-          <div class="skill-tags" aria-label="Plataformas e competências">
-            <span>Meta Ads</span>
-            <span>Google Ads</span>
+        </div>
+
+        <aside class="about-panel reveal" aria-label="Resumo da atuação profissional">
+          <p class="about-panel-label">Atuação profissional</p>
+          <dl class="about-details">
+            <div>
+              <dt>Especialidade</dt>
+              <dd>Gestão de tráfego pago</dd>
+            </div>
+            <div>
+              <dt>Plataformas</dt>
+              <dd>Meta Ads e Google Ads</dd>
+            </div>
+            <div>
+              <dt>Base</dt>
+              <dd>Trindade — GO</dd>
+            </div>
+            <div>
+              <dt>Atendimento</dt>
+              <dd>Empresas de diversos segmentos</dd>
+            </div>
+          </dl>
+          <div class="skill-tags" aria-label="Competências">
             <span>Públicos personalizados</span>
             <span>Lookalike</span>
             <span>Funil de vendas</span>
             <span>Otimização</span>
             <span>Relatórios</span>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
