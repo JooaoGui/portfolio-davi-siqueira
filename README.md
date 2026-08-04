@@ -90,14 +90,3 @@ O CSS já aplica escala de cinza, baixa opacidade e brilho neutro para manter to
 - inclusão da faixa de logos de empresas atendidas com tratamento visual monocromático e sem fundos desnecessários.
 
 - carrossel contínuo e responsivo para as empresas atendidas, com pausa automática no hover e controle acessível de pausar/retomar.
-
-## Estrutura enxuta atual
-
-- apresentação com foto;
-- carrossel de empresas atendidas;
-- posicionamento;
-- serviços;
-- sobre;
-- contato e rodapé.
-
-As antigas seções “Frentes de atuação” e “Processo de trabalho” foram removidas para tornar a navegação mais rápida e direta.
