@@ -109,37 +109,6 @@
     counters.forEach((counter) => counterObserver.observe(counter));
   }
 
-
-  const logoCarousel = document.querySelector('[data-logo-carousel]');
-  const carouselTrack = logoCarousel?.querySelector('[data-carousel-track]');
-  const carouselGroup = logoCarousel?.querySelector('[data-carousel-group]');
-  const carouselToggle = document.querySelector('[data-carousel-toggle]');
-  const carouselToggleLabel = document.querySelector('[data-carousel-toggle-label]');
-  const carouselToggleIcon = carouselToggle?.querySelector('.carousel-toggle-icon');
-
-  if (logoCarousel && carouselTrack && carouselGroup) {
-    const clonedGroup = carouselGroup.cloneNode(true);
-    clonedGroup.setAttribute('aria-hidden', 'true');
-    clonedGroup.querySelectorAll('img').forEach((image) => image.setAttribute('alt', ''));
-    carouselTrack.appendChild(clonedGroup);
-  }
-
-  carouselToggle?.addEventListener('click', () => {
-    if (!logoCarousel) return;
-
-    const isPaused = logoCarousel.classList.toggle('is-paused');
-    carouselToggle.setAttribute('aria-pressed', String(isPaused));
-    carouselToggle.setAttribute('aria-label', isPaused ? 'Retomar carrossel de empresas' : 'Pausar carrossel de empresas');
-
-    if (carouselToggleLabel) {
-      carouselToggleLabel.textContent = isPaused ? 'Retomar' : 'Pausar';
-    }
-
-    if (carouselToggleIcon) {
-      carouselToggleIcon.textContent = isPaused ? '▶' : 'Ⅱ';
-    }
-  });
-
   form?.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -150,7 +119,7 @@
     const whatsapp = String(form.dataset.whatsapp || '').replace(/\D/g, '');
 
     if (!whatsapp || whatsapp.endsWith('999999999')) {
-      window.alert('Não foi possível abrir o WhatsApp neste momento. Tente novamente em instantes.');
+      window.alert('Antes de publicar, substitua o número de WhatsApp no atributo data-whatsapp do formulário.');
       return;
     }
 
